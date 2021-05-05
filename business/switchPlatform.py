@@ -21,7 +21,7 @@ def switchPlatform(self):
     # 点击所选机构
     myPlat = web.find_element(By.XPATH,"//div[@title='自动化测试机构']")
     myPlat.click()
-    # 切换出frame页面-平台选择（回到默认页面）
+    # 切换出frame页面-平台选择（回到默认）
     web.switch_to.default_content()
     # 点击确认
     ok=web.find_element(By.XPATH,"//a[@class='layui-layer-btn0']")
